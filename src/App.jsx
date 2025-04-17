@@ -16,12 +16,10 @@ function App() {
     <>
       <h1>Decisions, decisions...</h1>
       <button onClick={async () => {
-        const data = await fetchJSON("/data?ptest=yum", "POST");
-        console.log(data);
+        console.log("pop");
       }}>Click Me</button>
       <button onClick={async () => {
-        const data = await fetchJSON("/data?ptest=mum", "POST");
-        console.log(data);
+        console.log("burst");
       }}>Click Me</button>
     </>
   )

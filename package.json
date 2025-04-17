@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "server:dev": "nodemon server.js",
-    "common": "concurrently \"npm run build\" \"npm run dev\" \"npm run server:dev\""
+    "common": "concurrently \"npm run build\" \"npm run dev\" \"npm run server:dev\"",
+    "server": "npm run build && node server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",

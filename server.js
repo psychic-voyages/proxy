@@ -6,6 +6,7 @@ const __filename = fileURLToPath(import.meta.url); // get the resolved path to t
 const __dirname = path.dirname(__filename); // get the name of the directory
 
 const server = express();
+const PORT = process.env.PORT || 2222;
 
 server.use(cors());
 server.use(express.json());
@@ -20,6 +21,6 @@ server.get("/api/tester", (req,res,next) => {
     res.send({message: "Goodbye!"});
 })
 
-server.listen(2222, () => {
+server.listen(PORT, () => {
     console.log("Lisening...");
 })
